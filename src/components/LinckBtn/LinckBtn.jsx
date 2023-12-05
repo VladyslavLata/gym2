@@ -12,7 +12,7 @@ export const LinckBtn = ({ href, icon: Icon, name, currentLink }) => {
         onClick={(e) => e.currentTarget.blur()}
       >
         <div className={styles[`${currentLink}IconWrapp`]}>
-          <Icon alt="icon" width="100%" height="100%" fill="currentcolor" />
+          <Icon name="icon" width="100%" height="100%" fill="currentcolor" />
         </div>
       </a>
     </li>

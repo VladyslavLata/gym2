@@ -13,7 +13,7 @@ export const BtnIcon = ({ name, svg: Svg, w = 20, h = 20, onClick }) => {
         e.currentTarget.blur();
       }}
     >
-      <Svg alt="icon" width={w} height={h} fill="currentcolor" />
+      <Svg name="icon" width={w} height={h} fill="currentcolor" />
     </button>
   );
 };

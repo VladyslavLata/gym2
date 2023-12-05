@@ -11,9 +11,9 @@ import { Social } from "../src/components/Social/Social";
 const Home = () => (
   <>
     <Head>
-      <title>Home</title>
+      <title>GoodLife - Home</title>
       <meta name="description" content="main page of the gym website" />
-      {/* <link rel="icon" href="/favicon.ico" /> */}
+      <link rel="icon" href="/logoIcon.webp" />
     </Head>
     <Hero />
     <SectionNewBody />
