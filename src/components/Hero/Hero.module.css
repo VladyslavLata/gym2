@@ -1,0 +1,58 @@
+.heroSection {
+  position: relative;
+  z-index: 1;
+}
+
+.contentWrapp {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding: 100px 0 0;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    padding: 160px 0 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 760px;
+    padding: 240px 0 0;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #ffffff;
+
+  @media screen and (min-width: 480px) {
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 54px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 70px;
+  }
+}
+
+.accent {
+  color: #ffc1d8;
+}
+
+.btnWrapp {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 479px) {
+    width: 210px;
+  }
+}

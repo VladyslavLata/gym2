@@ -1,0 +1,26 @@
+.section {
+padding: 45px 0 65px;
+text-align: center;
+background-color: #EDEDED;
+
+@media screen and (min-width:1440px) {
+padding: 60px 0 70px;
+  }
+}
+
+.linkList {
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+
+@media screen and (min-width:405px) {
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:768px) {
+  width: 510px;
+  margin-top: 20px;
+}
+}

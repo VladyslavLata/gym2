@@ -1,0 +1,59 @@
+.section {
+  position: relative;
+  /* margin-left: auto;
+margin-right: auto; */
+}
+
+.wrappImg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 445px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #474747;
+
+  @media screen and (min-width: 768px) {
+    height: 480px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1800px;
+  }
+}
+
+.img {
+object-fit: cover;
+object-position: 50% top;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 260px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    max-width: 500px;
+  }
+}

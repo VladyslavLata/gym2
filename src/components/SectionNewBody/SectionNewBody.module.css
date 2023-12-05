@@ -1,0 +1,64 @@
+.section {
+  padding: 30px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 110px 0;
+  }
+}
+
+.wrappContent {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 180px;
+  }
+
+}
+
+.wrappImages {
+  position: relative;
+
+  min-height: 315px;
+
+  @media screen and (max-width: 767px) {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 260px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    min-width: 440px;
+    min-height: 505px;
+  }
+}
+
+.wrappText {
+  padding-top: 15px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+  }
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 2.3;  
+    color:  #424242;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,65 @@
+.mainLinkWrapp {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #e43071;
+  transition: background-color 250ms linear, color 250ms linear;
+
+  @media screen and (min-width: 768px) {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.mainLinkWrapp:hover,
+.mainLinkWrapp:focus-within {
+  background-color: #e43071;
+  color: #ffffff;
+}
+
+.mainLinkWrapp:focus-within {
+  border: 2px solid black;
+}
+
+.secondLinkWrapp {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: border-color 250ms linear;
+}
+
+.secondLinkWrapp:hover,
+.secondLinkWrapp:focus-within {
+  border-color: #ffffff;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.mainIconWrapp {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.secondIconWrapp {
+  width: 25px;
+  height: 25px;
+}

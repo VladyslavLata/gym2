@@ -1,0 +1,80 @@
+.sliderWrapp {
+/* background-color: #474747; */
+width: 100%;
+
+  @media screen  and (min-width:1800px){
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.imgWrapp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 425px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 550px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: 1800px;
+  }
+}
+
+.imgWrapp > img {
+  object-fit: cover;
+}
+
+.dotsListWrapp {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dotsList {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: auto;
+  /* height: 35px; */
+  padding: 10px 10px 15px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.dotsList>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 17px;
+  min-height: 17px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 300ms linear, width 300ms linear,
+    height 300ms linear;
+}
+
+li[class="slick-active"] .dot {
+  width: 17px;
+  height: 17px;
+  background-color: #e43071;
+}
+
+.imgWrapp img[alt="girl with dumbbells"] {
+  object-position: 50% 0;
+}
