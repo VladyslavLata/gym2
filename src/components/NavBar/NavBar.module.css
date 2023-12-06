@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+justify-content: space-between;
 }
 
 .logo {
@@ -12,7 +13,7 @@
 .logoAccent {
   color:#ffc1d8;
 }
-
+/* 
 .linkListWrapp {
   display: flex;
 
@@ -39,10 +40,11 @@
   flex-grow: 1;
   justify-content: center;
     }
-}
+} */
 
 .navlist {
-display: block;
+display: none;
+
 
   @media screen and (min-width: 768px) { 
   display: flex;
@@ -50,18 +52,18 @@ display: block;
 }
 }
 
-.openMobileMenu {   
+/* .openMobileMenu {   
   visibility: visible;
 
     @media screen and (max-width: 767px) { 
       transform: translateX(0%);
       transition: transform linear 500ms, visibility 0ms;
     }
-  }
+  } */
 
 
 
-.linkWrapp {
+/* .linkWrapp {
   overflow: visible;
   @media screen and (max-width: 767px) {
       border-radius: 20px;
@@ -112,4 +114,4 @@ display: block;
 .link:hover, .link:focus {
   color: #E43071;
   background-color: #ffc1d8;
-}
+} */
