@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Container } from "../Container/Container";
 import { CarouselGymImg } from "../Carousel/Carousel";
 import { Btn } from "../Btn/Btn";
@@ -15,6 +17,15 @@ const images = [
 ];
 
 export const Hero = () => {
+  const [phoneIsVisible, setPhoneIsVisible] = useState(false);
+
+  const phoneIsDisplayed = () => {
+    if (phoneIsVisible) {
+      return;
+    }
+    setPhoneIsVisible(true);
+  };
+
   return (
     <section className={styles.heroSection}>
       <CarouselGymImg dataImg={images} />
@@ -28,9 +39,19 @@ export const Hero = () => {
               text="See the benefits"
               btnStyles="main"
               name="a button showing contact information"
+              onClick={phoneIsDisplayed}
             />
           </div>
         </div>
+        <p
+          className={
+            phoneIsVisible
+              ? `${styles.phone} ${styles.phoneVisible}`
+              : styles.phone
+          }
+        >
+          +88 98765 43210
+        </p>
       </Container>
     </section>
   );

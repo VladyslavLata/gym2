@@ -56,3 +56,26 @@
     width: 210px;
   }
 }
+
+.phone {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  color: #e43071;
+  opacity: 0;
+  transition: opacity linear 500ms;
+
+  @media screen and (min-width: 480px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
+  }
+}
+
+.phoneVisible {
+  opacity: 1;
+}
