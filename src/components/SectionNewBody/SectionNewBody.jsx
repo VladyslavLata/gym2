@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
+import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
 import { Container } from "../Container/Container";
 import { Img } from "../Img/Img";
 import { Title } from "../Title/Title";
 import { Btn } from "../Btn/Btn";
+import { HideBox } from "../HideBox/HideBox";
 import { useObserver } from "../../hooks/useObserver";
 
 import maleLiftingWeights from "../../../public/male-lifting-weights.jpg";
@@ -26,6 +28,7 @@ const Images = [
 ];
 
 export const SectionNewBody = () => {
+  const { visible, togleVisibility } = useIsVisibleContent();
   const elementRef = useRef(null);
   const { isIntersecting } = useObserver(0, elementRef);
 
@@ -53,7 +56,26 @@ export const SectionNewBody = () => {
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            <Btn text="View the FAQ" name="view the FAQ" />
+            <HideBox isVisible={visible}>
+              <ul>
+                {[1, 2, 3].map((el) => (
+                  <li key={el}>
+                    <details>
+                      <summary className={styles.summary}>Read more?</summary>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec viverra nec nulla vitae mollis.
+                      </p>
+                    </details>
+                  </li>
+                ))}
+              </ul>
+            </HideBox>
+            <Btn
+              text={visible ? "Hide the FAQ" : "View the FAQ"}
+              name={visible ? "hide the FAQ" : "view the FAQ"}
+              onClick={togleVisibility}
+            />
           </div>
         </div>
       </Container>

@@ -1,7 +1,9 @@
 import { useState } from "react";
 
+import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
 import { Container } from "../Container/Container";
 import { CarouselGymImg } from "../Carousel/Carousel";
+import { PhoneBox } from "../PhoneBox/PhoneBox";
 import { Btn } from "../Btn/Btn";
 
 import gymPhoto1 from "../../../public/gym1.webp";
@@ -17,14 +19,7 @@ const images = [
 ];
 
 export const Hero = () => {
-  const [phoneIsVisible, setPhoneIsVisible] = useState(false);
-
-  const phoneIsDisplayed = () => {
-    if (phoneIsVisible) {
-      return;
-    }
-    setPhoneIsVisible(true);
-  };
+  const { visible, phoneIsDisplayed } = useIsVisibleContent();
 
   return (
     <section className={styles.heroSection}>
@@ -43,15 +38,7 @@ export const Hero = () => {
             />
           </div>
         </div>
-        <p
-          className={
-            phoneIsVisible
-              ? `${styles.phone} ${styles.phoneVisible}`
-              : styles.phone
-          }
-        >
-          +88 98765 43210
-        </p>
+        <PhoneBox phoneIsVisible={visible} />
       </Container>
     </section>
   );

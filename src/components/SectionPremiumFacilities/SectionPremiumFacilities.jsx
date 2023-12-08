@@ -1,5 +1,7 @@
 import { useRef } from "react";
 
+import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
+import { HideBox } from "../HideBox/HideBox";
 import { Container } from "../Container/Container";
 import { Img } from "../Img/Img";
 import { Title } from "../Title/Title";
@@ -27,6 +29,7 @@ const Images = [
 ];
 
 export const SectionPremiumFacilities = () => {
+  const { visible, togleVisibility } = useIsVisibleContent();
   const elementRef = useRef(null);
   const { isIntersecting } = useObserver(0, elementRef);
 
@@ -54,7 +57,20 @@ export const SectionPremiumFacilities = () => {
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            <Btn text="Learn more" name="read more about premium services" />
+            <HideBox isVisible={visible}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                voluptatem explicabo, praesentium quas excepturi, nisi ipsam
+                labore dignissimos commodi quae vitae ipsum dolores corporis
+                quasi laboriosam libero expedita tenetur omnis totam ea tempore
+                eius dolore. A repellendus repudiandae cumque assumenda!
+              </p>
+            </HideBox>
+            <Btn
+              text={visible ? "Hide text" : "Learn more"}
+              name={visible ? "hide text" : "read more about premium services"}
+              onClick={togleVisibility}
+            />
           </div>
         </div>
       </Container>

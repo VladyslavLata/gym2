@@ -1,12 +1,16 @@
 import Image from "next/image";
 
+import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
 import { Container } from "../Container/Container";
+import { PhoneBox } from "../PhoneBox/PhoneBox";
 import { Title } from "../Title/Title";
 import { Btn } from "../Btn/Btn";
 import gymBG from "../../../public/gym-bg.jpg";
 import styles from "./SectionBecomeMore.module.css";
 
 export const SectionBecomeMore = () => {
+  const { visible, phoneIsDisplayed } = useIsVisibleContent();
+
   return (
     <section className={styles.section}>
       <div className={styles.wrappImg}>
@@ -31,7 +35,9 @@ export const SectionBecomeMore = () => {
           text="Let's do it!"
           name="a button showing contact information."
           btnStyles="main"
+          onClick={phoneIsDisplayed}
         />
+        <PhoneBox phoneIsVisible={visible} />
       </Container>
     </section>
   );

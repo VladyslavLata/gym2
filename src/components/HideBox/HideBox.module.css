@@ -1,0 +1,39 @@
+.hideBox {
+  margin-bottom: 20px;
+  /* padding: 0 5px; */
+  font-size: 16px;
+  line-height: 2.3;
+  color: #424242;
+  border: 2px solid;
+  border-color: #e43071;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: top left;
+  max-height: 0px;
+  opacity: 0;
+  transition: opacity 250ms linear, transform 500ms linear 250ms, max-height 500ms linear 250ms, border-color 500ms linear 250ms;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.visibleBox {
+  transform: scaleX(1);
+  max-height: 100%;
+  opacity: 1;
+  border-color: transparent;
+  transition: opacity 0ms, transform 300ms linear, max-height 500ms linear 300ms, border-color 250ms linear 1050ms;
+}
+
+.wrapContent {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.openWrapContent {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms linear 850ms;
+}
