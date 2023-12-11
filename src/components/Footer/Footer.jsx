@@ -7,7 +7,7 @@ import { LinkAddress } from "../LinkAddress/LInkAddress";
 import youtube from "/public/youtube.svg";
 import twitter from "/public/twitter.svg";
 import dribbble from "/public/dribbble.svg";
-// import inst from "/public/instagram.svg";
+import instagram from "/public/instagram.svg";
 import emailIcon from "/public/message.svg";
 import phoneIcon from "/public/calling.svg";
 import locationIcon from "/public/location.svg";
@@ -15,7 +15,7 @@ import { manrope, poppins } from "../../fonts/fonts";
 import styles from "./Footer.module.css";
 
 const socials = [
-  { name: "instagram", icon: twitter, link: "https://www.instagram.com/" },
+  { name: "instagram", icon: instagram, link: "https://www.instagram.com/" },
   { name: "dribbble", icon: dribbble, link: "https://dribbble.com/" },
   { name: "twitter", icon: twitter, link: "https://twitter.com/" },
   { name: "youtube", icon: youtube, link: "https://www.youtube.com/" },
