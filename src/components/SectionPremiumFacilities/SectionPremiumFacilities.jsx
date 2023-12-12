@@ -70,6 +70,7 @@ export const SectionPremiumFacilities = () => {
               text={visible ? "Hide text" : "Learn more"}
               name={visible ? "hide text" : "read more about premium services"}
               onClick={togleVisibility}
+              btnStyles={"second"}
             />
           </div>
         </div>

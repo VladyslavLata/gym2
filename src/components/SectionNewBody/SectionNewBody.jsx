@@ -74,6 +74,7 @@ export const SectionNewBody = () => {
             <Btn
               text={visible ? "Hide the FAQ" : "View the FAQ"}
               name={visible ? "hide the FAQ" : "view the FAQ"}
+              btnStyles={"second"}
               onClick={togleVisibility}
             />
           </div>

@@ -25,10 +25,15 @@
   transition: border-color 250ms linear, background-color 250ms linear;
 }
 
-.btnMain:hover {
+.mainBtnHover {
+    border: 2px solid #be285e;
+      background-color: #be285e;
+}
+
+/* .btnMain:hover {
   border: 2px solid #be285e;
   background-color: #be285e;
-}
+} */
 
 .btnMain:focus {
   border: 2px solid #be285e;
@@ -47,10 +52,14 @@
   transition: border-color 250ms linear, color 250ms linear;
 }
 
-.btnSecond:hover {
+.secondBtnHover {
+    border: 2px solid #be285e;
+      color: #be285e;
+}
+/* .btnSecond:hover {
   border: 2px solid #be285e;
   color: #be285e;
-}
+} */
 
 .btnSecond:focus {
   border: 2px solid #be285e;
