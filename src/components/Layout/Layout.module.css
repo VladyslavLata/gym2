@@ -1,0 +1,14 @@
+.wrappApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+overflow: hidden;
+}
+
+.mainAbout {
+flex-grow: 1;
+background-image: linear-gradient(to bottom, #ffffff, #f4e3e9);
+}

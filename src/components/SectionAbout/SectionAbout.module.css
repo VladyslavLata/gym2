@@ -1,0 +1,41 @@
+.aboutSection {
+  padding: 20px 0;
+}
+
+.imgWrapp {
+  position: relative;
+  margin: 20px 0;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #474747;
+
+  @media screen and (min-width: 480px) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 600px;
+  }
+}
+
+.img {
+  object-fit: cover;
+}
+
+.text {
+  display: inline;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: #424242;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}

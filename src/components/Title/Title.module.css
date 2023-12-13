@@ -27,8 +27,7 @@
   font-weight: 600;
 }
 
-/* .titleThird {
-  font-size: 48;
-  font-weight: 600;
-  color: #424242;
-} */
+.titleAbout {
+text-align: center;
+margin-bottom: 20px;
+}
