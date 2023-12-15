@@ -57,7 +57,7 @@ export const SectionPremiumFacilities = () => {
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            <HideBox isVisible={visible}>
+            {/* <HideBox isVisible={visible}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                 voluptatem explicabo, praesentium quas excepturi, nisi ipsam
@@ -65,7 +65,7 @@ export const SectionPremiumFacilities = () => {
                 quasi laboriosam libero expedita tenetur omnis totam ea tempore
                 eius dolore. A repellendus repudiandae cumque assumenda!
               </p>
-            </HideBox>
+            </HideBox> */}
             <Btn
               text={visible ? "Hide text" : "Learn more"}
               name={visible ? "hide text" : "read more about premium services"}
