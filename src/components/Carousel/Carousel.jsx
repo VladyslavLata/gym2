@@ -9,6 +9,7 @@ export const CarouselGymImg = ({ dataImg }) => {
     dotsClass: `${styles.dotsListWrapp}`,
     arrows: false,
     fade: true,
+    className: `${styles.ddd}`,
     infinite: true,
     autoplay: true,
     speed: 500,
@@ -28,6 +29,7 @@ export const CarouselGymImg = ({ dataImg }) => {
         {dataImg.map(({ img, alt }, i) => (
           <div key={alt} className={styles.imgWrapp}>
             <Image
+              className={styles.img}
               src={img}
               fill
               alt={alt}

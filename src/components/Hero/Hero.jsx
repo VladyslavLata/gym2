@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
+import { useIsRendered } from "../../hooks/useIsRendered";
 import { Container } from "../Container/Container";
 import { CarouselGymImg } from "../Carousel/Carousel";
 import { PhoneBox } from "../PhoneBox/PhoneBox";
@@ -20,10 +21,11 @@ const images = [
 
 export const Hero = () => {
   const { visible, phoneIsDisplayed } = useIsVisibleContent();
+  const { isRendered } = useIsRendered();
 
   return (
     <section className={styles.heroSection}>
-      <CarouselGymImg dataImg={images} />
+      {isRendered && <CarouselGymImg dataImg={images} />}
       <Container currentContainer="heroContainer">
         <div className={styles.contentWrapp}>
           <h1 className={styles.title}>
