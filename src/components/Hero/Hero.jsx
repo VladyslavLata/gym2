@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
 import { useIsRendered } from "../../hooks/useIsRendered";
 import { Container } from "../Container/Container";
