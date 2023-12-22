@@ -58,7 +58,7 @@ export const NavBar = () => {
     <>
       <nav className={styles.navigation} role="navigation">
         <Link href="/" className={styles.logo}>
-          Good<span className={styles.logoAccent}>lyfe</span>
+          Good<span className={styles.logoAccent}>life</span>
         </Link>
         {/* <div
           className={`${styles.linkListWrapp} ${

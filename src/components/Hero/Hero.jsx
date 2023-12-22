@@ -27,7 +27,7 @@ export const Hero = () => {
       <Container currentContainer="heroContainer">
         <div className={styles.contentWrapp}>
           <h1 className={styles.title}>
-            Welcome to Good<span className={styles.accent}>lyfe</span> Gyms
+            Welcome to Good<span className={styles.accent}>life</span> Gyms
           </h1>
           <div className={styles.btnWrapp}>
             <Btn

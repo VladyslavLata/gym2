@@ -23,7 +23,7 @@ const socials = [
 
 const address = [
   {
-    info: "admin@goodlyfe.co",
+    info: "admin@goodlife.co",
     icon: emailIcon,
     name: "E-mail",
     link: "mailto:admin@goodlyfe.co",
@@ -62,7 +62,7 @@ export const Footer = () => {
         <div className={styles.mainContentWrapp}>
           <div>
             <Link href="/" className={`${poppins.variable} ${styles.logo}`}>
-              Good<span className={styles.logoAccent}>lyfe</span>
+              Good<span className={styles.logoAccent}>life</span>
             </Link>
             <p className={styles.text}>
               Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl
