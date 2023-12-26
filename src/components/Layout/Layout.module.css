@@ -5,10 +5,10 @@
 }
 
 .main {
-overflow: hidden;
+  overflow: hidden;
 }
 
 .mainAbout {
-flex-grow: 1;
-background-image: linear-gradient(to bottom, #ffffff, #f4e3e9);
+  flex-grow: 1;
+  background-image: linear-gradient(to bottom, #ffffff, #f4e3e9);
 }

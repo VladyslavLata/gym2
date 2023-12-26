@@ -26,14 +26,9 @@
 }
 
 .mainBtnHover {
-    border: 2px solid #be285e;
-      background-color: #be285e;
-}
-
-/* .btnMain:hover {
   border: 2px solid #be285e;
   background-color: #be285e;
-} */
+}
 
 .btnMain:focus {
   border: 2px solid #be285e;
@@ -41,8 +36,8 @@
 }
 
 .btnMain:active {
-    border: 2px solid #EA5F91;
-      background-color: #EA5F91;
+  border: 2px solid #ea5f91;
+  background-color: #ea5f91;
 }
 
 .btnSecond {
@@ -53,13 +48,9 @@
 }
 
 .secondBtnHover {
-    border: 2px solid #be285e;
-      color: #be285e;
-}
-/* .btnSecond:hover {
   border: 2px solid #be285e;
   color: #be285e;
-} */
+}
 
 .btnSecond:focus {
   border: 2px solid #be285e;
@@ -67,6 +58,6 @@
 }
 
 .btnSecond:active {
-  border: 2px solid #EA5F91;
-    color: #EA5F91;
+  border: 2px solid #ea5f91;
+  color: #ea5f91;
 }

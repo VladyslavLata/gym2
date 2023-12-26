@@ -1,6 +1,7 @@
 .wrappImg {
   position: absolute;
-  transition: transform 1000ms cubic-bezier(0.09, 0.8, 0.67, 0.99), opacity 1000ms cubic-bezier(0.09, 0.8, 0.67, 0.99);
+  transition: transform 1000ms cubic-bezier(0.09, 0.8, 0.67, 0.99),
+    opacity 1000ms cubic-bezier(0.09, 0.8, 0.67, 0.99);
 }
 
 .wrappImgFirstHidden {
@@ -67,5 +68,4 @@
 .wrappImgVisible {
   transform: translate(0, 0);
   opacity: 1;
-
 }

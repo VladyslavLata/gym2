@@ -15,7 +15,6 @@ export const Layout = ({ children }) => {
           className={pathname === "/about" ? styles.mainAbout : styles.main}
           role="main"
         >
-          {/* <main style={{ overflow: "hidden", flexGrow: 1 }} role="main"> */}
           {children}
         </main>
         <Footer />

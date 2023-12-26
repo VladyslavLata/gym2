@@ -1,5 +1,4 @@
 import Link from "next/link";
-// import { useRouter } from "next/router";
 
 import styles from "./NavLink.module.css";
 

@@ -3,9 +3,9 @@
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
     #f4e3e9;
 
-      @media screen and (min-width: 1440px) {
-          padding: 50px 0 80px;
-        }
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0 80px;
+  }
 }
 
 .storiesContainer {

@@ -115,7 +115,7 @@ export const Footer = () => {
             ))}
           </ul>
           <p className={styles.copyringSign}>
-            &#169; 2020 GoodLyfe. All rights reserved
+            &#169; 2020 GoodLife. All rights reserved
           </p>
         </div>
       </Container>

@@ -11,8 +11,6 @@ export const LinckBtn = ({ href, icon: Icon, name, currentLink }) => {
     >
       <a
         href={href}
-        // className={styles.link}
-        // className={`${styles.link} ${styles[`${currentLink}Link`]}`}
         className={`${styles.link} ${styles[`${currentLink}Link`]} ${
           isHovered && currentLink === "main" ? styles.mainHover : ""
         }`}

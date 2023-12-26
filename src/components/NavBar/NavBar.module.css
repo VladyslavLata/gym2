@@ -1,6 +1,6 @@
 .navigation {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .logo {
@@ -11,107 +11,14 @@ justify-content: space-between;
 }
 
 .logoAccent {
-  color:#ffc1d8;
+  color: #ffc1d8;
 }
-/* 
-.linkListWrapp {
-  display: flex;
-
-  @media screen and (max-width: 767px) {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
-  background-image: linear-gradient(to bottom,
-        #ffffff,
-        #F4E3E9);
-  background-color: #ffffff;
-  transform: translateX(103%);  
-  visibility: hidden ;
-  transition: transform linear 500ms, visibility linear 0ms 500ms;
-  z-index: 999;
-  }
-
-  @media screen and (min-width: 768px) {
-  flex-grow: 1;
-  justify-content: center;
-    }
-} */
 
 .navlist {
-display: none;
-
-
-  @media screen and (min-width: 768px) { 
-  display: flex;
-  column-gap: 20px;
-}
-}
-
-/* .openMobileMenu {   
-  visibility: visible;
-
-    @media screen and (max-width: 767px) { 
-      transform: translateX(0%);
-      transition: transform linear 500ms, visibility 0ms;
-    }
-  } */
-
-
-
-/* .linkWrapp {
-  overflow: visible;
-  @media screen and (max-width: 767px) {
-      border-radius: 20px;
-      overflow: hidden;
-    }
-}
-
-.linkWrapp:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-    }
-
-}
-
-.link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.1;
-  color: #ffffff;
-  overflow: hidden;
-
-  @media screen and (max-width: 767px) {
-  background-color: #E43071;
-  width: 280px;
-  justify-content: center;  
-  padding: 10px 10px;
-  border-radius: 20px;
-}
+  display: none;
 
   @media screen and (min-width: 768px) {
-  min-width: 150px; 
-  padding: 0 20px;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  transition: color 250ms linear, background-color 250ms linear;
+    display: flex;
+    column-gap: 20px;
+  }
 }
-}
-
-.active {
-    color: #E43071;
-    background-color: #ffc1d8;
-}
-
-.link:hover, .link:focus {
-  color: #E43071;
-  background-color: #ffc1d8;
-} */

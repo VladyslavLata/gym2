@@ -13,9 +13,6 @@ export const Btn = ({ text, btnStyles, name, onClick }) => {
       name={name}
       onClick={(e) => {
         e.currentTarget.blur();
-        // if (!onClick) {
-        //   return;
-        // }
         if (e.nativeEvent.pointerType === "touch") {
           isHoveredOff();
         }

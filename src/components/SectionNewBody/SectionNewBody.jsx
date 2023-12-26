@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import { useIsVisibleContent } from "../../hooks/useIsVisibleContent";
 import { Container } from "../Container/Container";
@@ -56,7 +56,7 @@ export const SectionNewBody = () => {
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            {/* <HideBox isVisible={visible}>
+            <HideBox isVisible={visible}>
               <ul>
                 {[1, 2, 3].map((el) => (
                   <li key={el}>
@@ -70,7 +70,7 @@ export const SectionNewBody = () => {
                   </li>
                 ))}
               </ul>
-            </HideBox> */}
+            </HideBox>
             <Btn
               text={visible ? "Hide the FAQ" : "View the FAQ"}
               name={visible ? "hide the FAQ" : "view the FAQ"}

@@ -6,7 +6,7 @@
 }
 
 .mainContentWrapp {
-margin-bottom: 35px;
+  margin-bottom: 35px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -31,9 +31,9 @@ margin-bottom: 35px;
   margin: 25px 0;
   font-size: 14px;
   line-height: 1.7;
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 230px;
-      }
+  }
 }
 
 .socialList {
@@ -42,10 +42,9 @@ margin-bottom: 35px;
 }
 
 .reachWrapp {
-
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 40px;
-      }
+  }
 }
 
 .reach {
@@ -71,10 +70,10 @@ margin-bottom: 35px;
 }
 
 .downloadWrapp {
-@media screen and (min-width: 768px) {
- display: flex;
- flex-direction: row-reverse;
- justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
